@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Sayac with ChangeNotifier {
-  int _sayac;
+  int _sayac=0;
   Sayac(this._sayac);
 
   int get sayac => _sayac;
