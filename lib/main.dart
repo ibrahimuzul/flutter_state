@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_state/auth_service.dart';
 import 'package:flutter_state/counter.dart';
 import 'package:flutter_state/sayac_with_provider.dart';
-//import 'package:flutter_state/stream_kullanimi.dart';
+import 'package:flutter_state/stream_kullanimi.dart';
 import 'package:provider/provider.dart';
 
 //import 'bloc_kullanimi.dart';
@@ -68,14 +68,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   );
                 }),
-//            RaisedButton(
-//              onPressed: () {
-//                Navigator.of(context).push(
-//                    MaterialPageRoute(builder: (context) => StreamKullanimi()));
-//              },
-//              child: Text("Stream Kullanımı"),
-//              color: Colors.yellow,
-//            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => StreamKullanimi()));
+              },
+              child: Text("Stream Kullanımı"),
+              color: Colors.yellow,
+            ),
 //            RaisedButton(
 //              onPressed: () {
 //                Navigator.of(context).push(
