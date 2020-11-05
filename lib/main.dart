@@ -6,6 +6,8 @@ import 'package:flutter_state/sayac_with_provider.dart';
 import 'package:flutter_state/stream_kullanimi.dart';
 import 'package:provider/provider.dart';
 
+import 'bloc_kullanimi.dart';
+
 //import 'bloc_kullanimi.dart';
 
 void main() async {
@@ -76,14 +78,14 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text("Stream Kullanımı"),
               color: Colors.yellow,
             ),
-//            RaisedButton(
-//              onPressed: () {
-//                Navigator.of(context).push(
-//                    MaterialPageRoute(builder: (context) => BlocKullanimi()));
-//              },
-//              child: Text("Bloc Kullanımı"),
-//              color: Colors.green,
-//            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => BlocKullanimi()));
+              },
+              child: Text("Bloc Kullanımı"),
+              color: Colors.green,
+            ),
           ],
         ),
       ),
